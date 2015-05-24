@@ -12,7 +12,9 @@ public class Parameters1 {
 	public void parameter1(@Optional("optional value") String name)
 	{
 		System.out.println("This is parameter method: " + name);
-		System.out.println("IVAPP-002");
+		System.out.println("master branch is merged in IVAPP-002");
+
+
 	}
 	
 	
