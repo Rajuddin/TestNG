@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Reporting and Listeners TestCase" verbose="3"  parallel="false" thread-count="2" allow-return-values="true"> 
+	
+	<listeners>
+		<listener class-name="TestngPackage1.Custom_Reporting_Test"></listener>
+	</listeners>
+   
+   <test name="StandardSheet Testcases">
+   		<classes>
+	       <class name="TestngPackage1.Parameters1"/>
+      	</classes>
+   </test>
+
+ </suite>

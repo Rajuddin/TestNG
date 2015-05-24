@@ -1,0 +1,87 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ApAcceptance TestCase" verbose="3"  parallel="none" thread-count="2" allow-return-values="true"> 
+
+	   <parameter name="first-name" value="raja under the suite tag"></parameter>
+   <test name="StandardSheet Testcases">
+   
+   <!-- Groups are accumulative in nature, We can define 
+   which group to execute and
+   which method to be included  in the execution -->
+   
+ <!--  
+  <groups>
+    <run>
+      <include name="group2"/>
+      <include name="group1"/>
+    </run>
+  </groups>
+   -->
+   <!-- 
+    <classes>
+      <class name="TestngPackage1.GroupsExplore">
+        <methods>
+      		<include name= "method1"/>       	   		
+        </methods>
+      </class>
+    </classes>
+    <classes> -->
+    <!--***************************************************************************  -->
+      <!--execute this class to know that any methid having return type will not be executed unless 
+      we add  allow-return-values="true" in suite or test-->
+     <!--  
+      <classes>
+       <class name="TestngPackage1.AnnotationTestExplore">
+        <methods>
+      		<include name= "test1"/>       	   		
+        </methods>
+      </class>
+    </classes> -->
+    
+    <!--***************************************************************************  -->
+     <!--execute this class to know that any methid having return type will not be executed unless 
+      we add  allow-return-values="true" in suite or test
+      
+      Try with exclude and include each group-->
+ <!--  
+ <groups>
+    <run>
+      <exclude name="methodLevelGroups"/>
+       <include name="classLevelGroups"/>
+    </run>
+  </groups>
+  
+      <classes>
+       <class name="TestngPackage1.PatialGroupsExplore">
+       <include name="testP1"/>
+       <include name="testP2"/>
+      </class>
+    </classes> 
+     -->
+     
+      <!--***************************************************************************  -->
+     <!--Parameters from testng.xml to annotated test method-->
+ <!-- 
+ 	
+       <classes>
+       
+       <class name="TestngPackage1.ParametersXML">\
+       <parameter name="first-name" value="raja under the class tag"></parameter>
+       <include name="parameter1"/>
+      </class>
+    </classes>
+    
+     -->
+      <!--***************************************************************************  -->
+     <!--data Providers to annotated test method-->
+ 
+ 	
+       <classes>
+       
+       <class name="TestngPackage1.ParameterXML_dP2">
+       <!-- <include name="parameter1"/> -->
+      </class>
+    </classes>
+    
+ </test>
+
+ </suite>

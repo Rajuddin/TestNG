@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ApAcceptance TestCase" verbose="3"  parallel="false" thread-count="2" allow-return-values="true"> 
+
+	   <parameter name="first-name" value="raja under the suite tag"></parameter>
+	   <listeners>
+	   	<listener class-name="TestngPackage1.CustomListner"></listener>
+	   </listeners>
+   <test name="StandardSheet Testcases">
+      <classes>
+   		    <class name="TestngPackage1.Parameters2">
+   		   	
+     		 </class>
+   	 </classes>
+    
+ </test>
+
+ </suite>
